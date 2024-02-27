@@ -14,3 +14,6 @@
   * Multicriterial Decision Aiding (Electre Is)
   * Neural Networks
   * A* algorithm
+* NLP (Natural Language Processing)
+  * Python script for repairing corrupted .ipynb files
+  * Regular Expressions
