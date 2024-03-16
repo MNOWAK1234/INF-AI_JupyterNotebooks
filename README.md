@@ -1,12 +1,12 @@
 # Python and Jupyter Notebook related Classes Poznan University of Technology
-* SiAD (Statictics and Data Analysis)
+* Term 4: SiAD (Statictics and Data Analysis)
   *  Project: Exploration and analysis of fatal car accidents in America
-* KCK (Human-Computer Interaction and Signal Processing):
+* Term 5: KCK (Human-Computer Interaction and Signal Processing):
   * Graph Visualization
   * Terrain Visualization
   * Signal Processing Academic Exercises
   * Gender Classification from audio .wav file
-* ITAI (Introduction to Artificial Intelligence)
+* Term 1 Artificial Intelligence: ITAI (Introduction to Artificial Intelligence)
   * K-means Classification
   * KNN Classification
   * Decision Trees
@@ -14,8 +14,15 @@
   * Multicriterial Decision Aiding (Electre Is)
   * Neural Networks
   * A* algorithm
-* NLP (Natural Language Processing)
+* Term 6: NLP (Natural Language Processing)
   * Python script for repairing corrupted .ipynb files
   * Regular Expressions
-  * Bag of Words
+  * Bag of Words, Naive Bayes, TF-IDF
   * N-grams
+  * Word Embeddings
+  * Feedforward Networks
+  * Recursive Networks, TagLM, ELMo, ULMFiT
+  * Atention, Transformer, T5 Model
+  * BERT
+  * GPT
+  * Named Entity Recognition and other Extra Materials
