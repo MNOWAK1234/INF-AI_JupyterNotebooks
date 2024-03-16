@@ -17,3 +17,5 @@
 * NLP (Natural Language Processing)
   * Python script for repairing corrupted .ipynb files
   * Regular Expressions
+  * Bag of Words
+  * N-grams
