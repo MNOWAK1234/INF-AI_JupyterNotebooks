@@ -26,3 +26,4 @@
   * BERT
   * GPT
   * Named Entity Recognition and other Extra Materials
+  * Project: Poem Generator in Polish
