@@ -27,3 +27,7 @@
   * GPT
   * Named Entity Recognition and other Extra Materials
   * Project: Poem Generator in Polish
+* Term 3 Artificial Intelligence: IT (Information Theory)
+  * Approximations based on Markov sources
+* Term 7: SNUM (Neural Networks and Machine Learning
+  * Decision Trees: ID3 Algorithm
