@@ -31,3 +31,6 @@
   * Approximations based on Markov sources
 * Term 7: SNUM (Neural Networks and Machine Learning
   * Decision Trees: ID3 Algorithm
+  * Decision Trees: Report in WEKA
+  * KNN Classification
+  * K-means Classification
