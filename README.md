@@ -34,3 +34,4 @@
   * Decision Trees: Report in WEKA
   * KNN Classification
   * K-means Classification
+  * Linear and Logistic Regression
