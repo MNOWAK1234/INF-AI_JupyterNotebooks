@@ -29,9 +29,11 @@
   * Project: Poem Generator in Polish
 * Term 3: Artificial Intelligence: IT (Information Theory)
   * Approximations based on Markov sources
+  * Detecting if a text was written in a natural language
 * Term 7: SNUM (Neural Networks and Machine Learning
   * Decision Trees: ID3 Algorithm
   * Decision Trees: Report in WEKA
   * KNN Classification
   * K-means Classification
   * Linear and Logistic Regression
+  * Introduction to Numpy
