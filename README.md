@@ -37,3 +37,4 @@
   * K-means Classification
   * Linear and Logistic Regression
   * Introduction to Numpy
+  * Pytorch Introduction
