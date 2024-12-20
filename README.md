@@ -40,3 +40,6 @@
   * Linear and Logistic Regression
   * Introduction to Numpy
   * Pytorch Introduction
+  * Convolutional Neural Networks
+  * Normalization and Autoencoders
+  * Reccurent Neural Networks
