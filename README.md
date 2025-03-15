@@ -46,4 +46,18 @@
   * Normalization and Autoencoders
   * Reccurent Neural Networks
 * Term 8: SUS (Machine Learning)
-  * Decision Trees: Empirical Risk Minimization 
+  * Decision Trees: Empirical Risk Minimization
+* Term 8: CV (Computer Vision)
+  * Point Operations
+  * Convolutional Processing
+  * Morphological Methods
+  * Spectral Methods
+  * Project 1: ???
+  * Object Detection and Description
+  * Segmentation / Semantic Segmentation
+  * Advanced Pattern Recognition Techniques
+  * Project 2: ???
+  * Convolutional Neural Networks
+  * Popular Neural Network Models
+  * Neural Network Evaluation
+  * Project 3: ???
