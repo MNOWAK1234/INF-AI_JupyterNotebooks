@@ -47,6 +47,7 @@
   * Reccurent Neural Networks
 * Term 8: SUS (Machine Learning)
   * Decision Trees: Empirical Risk Minimization
+  * Naive Bayes Classification
 * Term 8: CV (Computer Vision)
   * Point Operations
   * Convolutional Processing
