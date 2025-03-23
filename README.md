@@ -18,6 +18,7 @@
   * Intro to Numpy and Pandas
 * Term 4: ECO (Elements of Convex Optimization)
   * Univariate Optimization
+  * Taylor's Expansion
 * Term 5: KCK (Human-Computer Interaction and Signal Processing):
   * Graph Visualization
   * Terrain Visualization
