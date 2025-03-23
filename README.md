@@ -16,6 +16,8 @@
   * Project: Exploration and analysis of fatal car accidents in America
 * Term 4: DM (Data Mining)
   * Intro to Numpy and Pandas
+* Term 4: ECO (Elements of Convex Optimization)
+  * Univariate Optimization
 * Term 5: KCK (Human-Computer Interaction and Signal Processing):
   * Graph Visualization
   * Terrain Visualization
@@ -48,6 +50,7 @@
 * Term 8: SUS (Machine Learning)
   * Decision Trees: Empirical Risk Minimization
   * Naive Bayes Classification
+  * Support Vector Machines
 * Term 8: CV (Computer Vision)
   * Point Operations
   * Convolutional Processing
