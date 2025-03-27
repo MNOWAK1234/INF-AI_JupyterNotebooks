@@ -52,6 +52,7 @@
   * Decision Trees: Empirical Risk Minimization
   * Naive Bayes Classification
   * Support Vector Machines
+  * Evaluation of Predictive Models
 * Term 8: CV (Computer Vision)
   * Point Operations
   * Convolutional Processing
@@ -66,3 +67,6 @@
   * Popular Neural Network Models
   * Neural Network Evaluation
   * Project 3: ???
+* Term 8: ZMIO (Reinforcement Learning)
+  * Intro to Reinforcement Learning
+  * Intro to Bayesian Optimization
