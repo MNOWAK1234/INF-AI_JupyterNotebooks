@@ -53,6 +53,7 @@
   * Naive Bayes Classification
   * Support Vector Machines
   * Evaluation of Predictive Models
+  * Regression Metrics
 * Term 8: CV (Computer Vision)
   * Point Operations
   * Convolutional Processing
