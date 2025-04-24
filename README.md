@@ -15,7 +15,14 @@
 * Term 4: SiAD (Statictics and Data Analysis)
   * Project: Exploration and analysis of fatal car accidents in America
 * Term 4: DM (Data Mining)
-  * Intro to Numpy and Pandas
+  * Introduction to NumPy and Pandas  
+  * Data Augmentation  
+  * Stratified Sampling  
+  * Text Embeddings  
+  * Image Embeddings  
+  * Clustering Methods  
+  * Clustering with Embeddings  
+  * Project 1: Tabular Data and Image Clustering  
 * Term 4: ECO (Elements of Convex Optimization)
   * Univariate Optimization
   * Taylor's Expansion
@@ -59,7 +66,7 @@
   * Convolutional Processing
   * Morphological Methods
   * Spectral Methods
-  * Project 1: ???
+  * Project 1: Wire Removal
   * Object Detection and Description
   * Segmentation / Semantic Segmentation
   * Advanced Pattern Recognition Techniques
@@ -71,3 +78,4 @@
 * Term 8: ZMIO (Reinforcement Learning)
   * Intro to Reinforcement Learning
   * Intro to Bayesian Optimization
+  * Model-Free Reinforcement Learning
