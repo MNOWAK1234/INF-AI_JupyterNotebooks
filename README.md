@@ -61,6 +61,8 @@
   * Support Vector Machines
   * Evaluation of Predictive Models
   * Regression Metrics
+  * Machine Learning in WEKA
+  * Attribute Space Transformations
 * Term 8: CV (Computer Vision)
   * Point Operations
   * Convolutional Processing
