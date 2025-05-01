@@ -1,5 +1,5 @@
 # Python and Jupyter Notebook related Classes Poznan University of Technology
-* Term 1 Artificial Intelligence: ITAI (Introduction to Artificial Intelligence)
+* Term 1: ITAI (Introduction to Artificial Intelligence)
   * K-means Classification
   * KNN Classification
   * Decision Trees
@@ -7,7 +7,7 @@
   * Multicriterial Decision Aiding (Electre Is)
   * Neural Networks
   * A* algorithm
-* Term 3: Artificial Intelligence: IT (Information Theory)
+* Term 3: IT (Information Theory)
   * Approximations based on Markov sources
   * Detecting if a text was written in a natural language
   * Huffman Coding
@@ -26,6 +26,7 @@
 * Term 4: ECO (Elements of Convex Optimization)
   * Univariate Optimization
   * Taylor's Expansion
+  * Gradient Descent
 * Term 5: KCK (Human-Computer Interaction and Signal Processing):
   * Graph Visualization
   * Terrain Visualization
@@ -63,13 +64,15 @@
   * Regression Metrics
   * Machine Learning in WEKA
   * Attribute Space Transformations
+  * Imbalanced Classes
+  * Gradient Boosting
 * Term 8: CV (Computer Vision)
   * Point Operations
   * Convolutional Processing
   * Morphological Methods
   * Spectral Methods
   * Project 1: Wire Removal
-  * Object Detection and Description
+  * Image Description
   * Segmentation / Semantic Segmentation
   * Advanced Pattern Recognition Techniques
   * Project 2: ???
