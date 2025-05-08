@@ -73,9 +73,9 @@
   * Spectral Methods
   * Project 1: Wire Removal
   * Image Description
-  * Segmentation / Semantic Segmentation
-  * Advanced Pattern Recognition Techniques
-  * Project 2: ???
+  * Image Segmentation
+  * AIntro to OpenCV
+  * Project 2: Monitoring a Snooker Game
   * Convolutional Neural Networks
   * Popular Neural Network Models
   * Neural Network Evaluation
@@ -84,3 +84,4 @@
   * Intro to Reinforcement Learning
   * Intro to Bayesian Optimization
   * Model-Free Reinforcement Learning
+  * Q-learning
