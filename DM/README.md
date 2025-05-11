@@ -8,5 +8,5 @@
 - **Lab06**: Clustering Methods
 - **Lab07**: Clustering with Embeddings
 - **Project1**: Tabular Data and Image Clustering
-- **Lab08**: Data Exploration
+- **Lab08**: Exploratory Data Analysis
 - **Lab09**: Association Rules
