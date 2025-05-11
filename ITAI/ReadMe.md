@@ -13,6 +13,8 @@
 
 ```bash
 jupyter nbconvert --to html notebook.ipynb
+```
 
+```bash
 jupyter nbconvert --to webpdf notebook.ipynb
 ```
