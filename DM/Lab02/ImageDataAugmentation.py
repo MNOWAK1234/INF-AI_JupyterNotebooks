@@ -4,7 +4,7 @@ import numpy as np
 from tqdm import tqdm
 import random
 
-dataset_path = r"C:/Users/miknowak/Desktop/Studia/DM/Project1/NamedSignboards"
+dataset_path = r"C:/Users/..."
 output_path = dataset_path
 
 os.makedirs(output_path, exist_ok=True)
