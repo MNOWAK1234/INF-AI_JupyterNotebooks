@@ -3,3 +3,4 @@
 - **Lab01**: Univariate Optimization
 - **Lab02**: Taylor's Expansion
 - **Lab03**: Gradient Descent
+- **Lab04**: Stochastic Gradient Descent
