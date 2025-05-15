@@ -33,6 +33,7 @@ This repository contains coding tasks and projects from the following study prog
 ## Term 6
 
 - **NLP** – Natural Language Processing
+- **DP** - Distributed Processing
 
 ## Term 7
 
