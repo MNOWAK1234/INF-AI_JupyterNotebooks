@@ -10,6 +10,10 @@ This repository contains coding tasks and projects from the following study prog
 
 - **ITAI** – Introduction to Artificial Intelligence
 
+## Term 2
+
+- **PD** – Declarative Programming
+
 ## Term 3
 
 - **IT** – Information Theory

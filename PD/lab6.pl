@@ -1,0 +1,51 @@
+%1
+najwiekszy([ONE],M):-M=ONE.
+najwiekszy([A|B],M):-najwiekszy(B,X),A>X,M=A.
+najwiekszy([A|B],M):-najwiekszy(B,X),A=<X,M=X.
+%2
+liniowa([_,_]).
+liniowa([A|[B|[C|D]]]):-liniowa([B|[C|D]]),R1 is A-B, R2 is B-C,R1=:=R2.
+%3
+rozbij([],[],[]).
+rozbij(L1,[0|NEXT],NEW):-rozbij(L1,NEXT,NEW).
+rozbij(L1,[NUM|NEXT],NEW):-NUM>0,oddziel(L1,NUM,SEGMENT,REST),rozbij(REST,NEXT,RESULT),NEW=[SEGMENT|RESULT].
+oddziel(L,0,[],R):-L=R.
+oddziel([A|B],NUM,P,R):-NUM>0,DALEJ is NUM-1,oddziel(B,DALEJ,RESULT,R),P=[A|RESULT].
+%4
+przynaleznosc([],[_,_],[],[]).
+przynaleznosc([A|B],[MIN,MAX],LW,LZ):-A>=MIN,A=<MAX,przynaleznosc(B,[MIN,MAX],IN,LZ),LW=[A|IN].
+przynaleznosc([A|B],[MIN,MAX],LW,LZ):-A<MIN,przynaleznosc(B,[MIN,MAX],LW,OUT),LZ=[A|OUT].
+przynaleznosc([A|B],[MIN,MAX],LW,LZ):-A>MAX,przynaleznosc(B,[MIN,MAX],LW,OUT),LZ=[A|OUT].
+%5
+decnabin(0,[0]).
+decnabin(1,[1]).
+decnabin(DEC,BINARY):-DEC>1,HALF is div(DEC,2),decnabin(HALF,REST),MODULO is mod(DEC,2),append(REST,[MODULO],BINARY).
+%6
+quicksort([],[]).
+quicksort([X|Xs],Ys):-rozdziel(Xs,X,Left,Right),quicksort(Left,Ls),quicksort(Right,Rs),append(Ls,[X|Rs],Ys).
+rozdziel([],_,[],[]).
+rozdziel([A|B],X,L1,L2):-A<X,rozdziel(B,X,D1,L2),L1=[A|D1].
+rozdziel([A|B],X,L1,L2):-A>=X,rozdziel(B,X,L1,D2),L2=[A|D2].
+%7
+wstawsort([],[]).
+wstawsort([A|B],RESULT):-wstawsort(B,NEXT),doposort(NEXT,A,RESULT).
+doposort([],NUM,LIST):-LIST=[NUM].
+doposort([A|B],NUM,NEW):-NUM=<A,NEW=[NUM|[A|B]].
+doposort([A|B],NUM,NEW):-NUM>A,doposort(B,NUM,NEXT),NEW=[A|NEXT].
+%8
+unikalne([],[]).
+unikalne([A|B],RESULT):-not(member(A,B)),!,unikalne(B,NEXT),RESULT=[A|NEXT].
+unikalne([A|B],RESULT):-member(A,B),!,unikalne(B,NEXT),RESULT=NEXT.
+%9
+najblizszy(_,[A],A).
+najblizszy(PIVOT,[A|B],VALUE):-najblizszy(PIVOT,B,NEXT),abs(PIVOT-A)<abs(PIVOT-NEXT),VALUE=A.
+najblizszy(PIVOT,[A|B],VALUE):-najblizszy(PIVOT,B,NEXT),abs(PIVOT-A)>=abs(PIVOT-NEXT),VALUE=NEXT.
+%10
+ciagliczb(A,A,L):-L=[A].
+ciagliczb(BEGIN,END,LIST):-BEGIN<END,DALEJ is BEGIN+1,ciagliczb(DALEJ,END,NEXT),LIST=[BEGIN|NEXT].
+odsiewaj(_,[],[]).
+odsiewaj(DIVIDER,[A|B],RESULT):-mod(A,DIVIDER)=:=0,!,odsiewaj(DIVIDER,B,RESULT).
+odsiewaj(DIVIDER,[A|B],[A|RESULT]):-mod(A,DIVIDER)=\=0,!,odsiewaj(DIVIDER,B,RESULT).
+sito([],[]).
+sito([A|REST],[A|PRIME]):-odsiewaj(A,REST,REMOVED),sito(REMOVED,PRIME).
+eratostenes(MAX,PRIME):-ciagliczb(2,MAX,INTIGERS),sito(INTIGERS,PRIME).
