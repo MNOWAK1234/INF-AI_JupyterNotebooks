@@ -26,6 +26,7 @@ This repository contains coding tasks and projects from the following study prog
 
 ## Term 5
 
+- **AI** - Artificial Intelligence
 - **KCK** – Human-Computer Interaction and Signal Processing
 
 ## Term 6

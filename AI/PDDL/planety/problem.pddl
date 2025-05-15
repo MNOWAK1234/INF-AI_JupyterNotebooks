@@ -1,0 +1,90 @@
+(define (problem Gwiazdy)
+	(:domain stars)
+	(:objects a b c d e - gwiazda
+            pole1 pole2 pole3 pole4 pole5 pole6 - miejsce
+            p1 p2 p3 p4 p5 p6 p7 - planeta
+            button - przycisk
+            d1 d2 d3 d4 d5 d6 d7 d8 - dzwignia)
+	(:init
+        (uloz a pole3)
+        (uloz b pole4)
+        (uloz c pole6)
+        (uloz d pole1)
+        (uloz e pole2)
+
+        (puste pole5)
+        (somsiad pole1 pole2)
+        (somsiad pole2 pole1)
+        (somsiad pole2 pole3)
+        (somsiad pole3 pole2)
+        (somsiad pole3 pole4)
+        (somsiad pole4 pole3)
+        (somsiad pole4 pole5)
+        (somsiad pole5 pole4)
+        (somsiad pole1 pole5)
+        (somsiad pole5 pole1)
+        (somsiad pole1 pole6)
+        (somsiad pole6 pole1)
+        (somsiad pole2 pole6)
+        (somsiad pole6 pole2)
+        (somsiad pole3 pole6)
+        (somsiad pole6 pole3)
+        (somsiad pole4 pole6)
+        (somsiad pole6 pole4)
+        (somsiad pole5 pole6)
+        (somsiad pole6 pole5)
+
+        (wajha d6 p6)
+        (wajha d1 p1)
+        (wajha d3 p2)
+        (wajha d5 p5)
+        (wajha d4 p4)
+        (wajha d7 p4)
+
+        (rozwiaz p6)
+
+        (at button p5)
+        (human p1)
+
+        (przejscie p6 p7 d6)
+        (przejscie p7 p6 d6)
+        (przejscie p6 p1 d5)
+        (przejscie p1 p6 d5)
+        (przejscie p1 p2 d1)
+        (przejscie p2 p1 d1)
+        (przejscie p1 p2 d7)
+        (przejscie p2 p1 d7)
+        (przejscie p3 p4 d3)
+        (przejscie p4 p3 d3)
+        (przejscie p3 p5 d4)
+        (przejscie p5 p3 d4)
+
+        (przejscie p2 p3 d8)
+        (przejscie p3 p2 d8)
+        (przejscie p4 p5 d8)
+        (przejscie p5 p4 d8)
+        (przesunieta d8)
+
+        (mogeisc p2 p3)
+        (mogeisc p3 p2)
+        (mogeisc p4 p5)
+        (mogeisc p5 p4)
+
+        (blokuje button d7)
+        (zablokowana d7)
+
+        (human f)
+        (rozwiaz a)
+        
+	)
+	(:goal
+		(and
+		    (uloz a pole1)
+            (uloz b pole2)
+            (uloz c pole3)
+            (uloz d pole4)
+            (uloz e pole5)
+            (human p7)
+		)
+	)
+)
