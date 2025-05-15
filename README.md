@@ -34,6 +34,7 @@ This repository contains coding tasks and projects from the following study prog
 
 - **NLP** – Natural Language Processing
 - **DP** - Distributed Processing
+- **WZK** - Cryptography
 
 ## Term 7
 
