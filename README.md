@@ -17,6 +17,7 @@ This repository contains coding tasks and projects from the following study prog
 ## Term 3
 
 - **IT** – Information Theory
+- **OOP** - Object Oriented Programming
 
 ## Term 4
 

@@ -1,0 +1,32 @@
+Qatar 26
+England 911
+Argentina 978
+France 962
+Spain 862
+Belgium 607
+Brazil 897
+Portugal 923
+Netherlands 823
+USA 324
+Mexico 487
+Denmark 498
+Germany 876
+Croatia 782
+Switzerland 321
+Uruguay 502
+Ecuador 505
+Iran 287
+Poland 501
+Australia 345
+Japan 554
+Morocco 576
+Cameroon 342
+Korea Republlic 321
+Senegal 267
+Wales 153
+Saudi Arabia 132
+Tunisia 154
+Costa Rica 179
+Canada 246
+Serbia 248
+Ghana 223

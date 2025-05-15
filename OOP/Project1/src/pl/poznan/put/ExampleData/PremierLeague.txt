@@ -1,0 +1,20 @@
+Arsenal 945
+Aston Villa 389
+Brighton & Hove Albion 507
+Bournemouth 376
+Chelsea 650
+Crystal Palace 432
+Everton 234
+Leeds United 304
+Leicester City 435
+Liverpool 830
+Manchester City 975
+Manchester United 780
+Newcastle United 813
+Fulham 543
+Southampton 132
+Tottenham Hotspur 850
+Nottingham Forest 166
+West Ham United 254
+Wolverhampton Wanderers 105
+Brentford 487
