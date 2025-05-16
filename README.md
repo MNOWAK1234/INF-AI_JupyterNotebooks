@@ -16,6 +16,7 @@ This repository contains coding tasks and projects from the following study prog
 
 ## Term 3
 
+- **CO** - Combinatorial Optimization
 - **IT** – Information Theory
 - **OOP** - Object Oriented Programming
 
