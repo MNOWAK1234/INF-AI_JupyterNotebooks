@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Data">
+
+    <DatePicker
+        android:id="@+id/firstDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="21dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/secondDatePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <DatePicker
+        android:id="@+id/secondDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="81dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstDatePicker" />
+
+    <EditText
+        android:id="@+id/dodanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="26dp"
+        android:hint="wpisz ile"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/obliczenia"
+        app:layout_constraintStart_toEndOf="@+id/opis1"
+        app:layout_constraintTop_toBottomOf="@+id/secondDatePicker" />
+
+    <TextView
+        android:id="@+id/opis2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="36dp"
+        android:text="Dni roboczych pomiędzy datami:"
+        app:layout_constraintEnd_toStartOf="@+id/robocze"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obliczenia" />
+
+    <TextView
+        android:id="@+id/opis1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:text="Dni pomiędzy datami:"
+        app:layout_constraintEnd_toStartOf="@+id/dodanie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondDatePicker" />
+
+    <Button
+        android:id="@+id/obliczenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="22dp"
+        android:text="Oblicz"
+        app:layout_constraintStart_toEndOf="@+id/dodanie"
+        app:layout_constraintTop_toBottomOf="@+id/secondDatePicker" />
+
+    <TextView
+        android:id="@+id/robocze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="84dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/opis2"
+        app:layout_constraintTop_toBottomOf="@+id/obliczenia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

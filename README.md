@@ -25,6 +25,7 @@ This repository contains coding tasks and projects from the following study prog
 - **DM** – Data Mining
 - **ECO** – Elements of Convex Optimization
 - **SBD1** - Database Systems 1
+- **UBI** - Ubiquitous Systems and Applications
 
 ## Term 5
 

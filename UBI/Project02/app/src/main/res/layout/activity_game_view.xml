@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameView">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Widok gier/dodatków"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/IDtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Resort"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:text="Id"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/TITLEtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Resort"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:text="Title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/YEARtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Resort"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:text="Year"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/THUMBtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:text="Thumbnail"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/RANKtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Resort"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:text="Rank"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tblLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
