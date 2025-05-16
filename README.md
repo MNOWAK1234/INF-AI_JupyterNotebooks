@@ -31,6 +31,7 @@ This repository contains coding tasks and projects from the following study prog
 - **AI** - Artificial Intelligence
 - **KCK** – Human-Computer Interaction and Signal Processing
 - **SBD2** - Database Systems 2
+- **ES** - Embedded Systems
 
 ## Term 6
 
