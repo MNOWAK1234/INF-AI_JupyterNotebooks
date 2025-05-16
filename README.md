@@ -34,6 +34,7 @@ This repository contains coding tasks and projects from the following study prog
 - **KCK** – Human-Computer Interaction and Signal Processing
 - **SBD2** - Database Systems 2
 - **ES** - Embedded Systems
+- **SE** - Software Engineering
 
 ## Term 6
 
