@@ -35,6 +35,7 @@ This repository contains coding tasks and projects from the following study prog
 - **SBD2** - Database Systems 2
 - **ES** - Embedded Systems
 - **SE** - Software Engineering
+- **SK2** - Computer Networks 2
 
 ## Term 6
 
