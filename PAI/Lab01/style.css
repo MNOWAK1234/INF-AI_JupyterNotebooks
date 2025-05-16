@@ -1,0 +1,57 @@
+li {
+    list-style-type: square
+}
+
+* {
+    font-family: Tahoma;
+}
+
+body {
+    margin: 5em 10em 5em 10em;
+    background-image: url(pattern.png);
+    background-size: 100px auto;
+    background-repeat: repeat-y;
+}
+
+p {
+    text-align: justify;
+}
+
+#cena {
+    color: red;
+    font-weight: bold;
+}
+
+#wstep {
+    font-style: italic;
+}
+
+td img {
+    border: 2px solid blue;
+    transition: border-color 0.3s;
+}
+
+td img:hover {
+    border-color: red;
+}
+
+h1+h2 {
+    letter-spacing: 5px;
+}
+
+td[colspan="2"] p {
+    font-size: small;
+}
+
+p+p {
+    color: gray;
+}
+
+h1 {
+    /* Jesli jest ten sam priorytet, to druga reguła napisuje pierwszą. */
+    /* To samo się tyczy sytuacji, kiedy regułę dodajemy w <style> */
+    color: yellow !important;
+    /* Important ma wyższy priorytet i dlatego tytuł jest na żółto */
+    color: blue;
+    color: green;
+}

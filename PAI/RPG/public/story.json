@@ -1,0 +1,507 @@
+{
+  "events": [
+    {
+      "id": 0,
+      "text": "You begin your studies at PUT. Your goal is not to get expelled and to achieve as many ECTS points as possible.",
+      "options": [
+        {
+          "id": 1,
+          "text": "Apply and bring all the documents",
+          "outcomes": [
+            {
+              "outcomeId": 1,
+              "probability": 0.9
+            },
+            {
+              "outcomeId": 2,
+              "probability": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "text": "You start the year in the L5 group. Which of the following subjects will you study the most?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Calculus",
+          "outcomes": [
+            {
+              "outcomeId": 3,
+              "probability": 0.8
+            },
+            {
+              "outcomeId": 4,
+              "probability": 0.2
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Operating systems",
+          "outcomes": [
+            {
+              "outcomeId": 3,
+              "probability": 0.7
+            },
+            {
+              "outcomeId": 4,
+              "probability": 0.3
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Low-level programming",
+          "outcomes": [
+            {
+              "outcomeId": 3,
+              "probability": 0.5
+            },
+            {
+              "outcomeId": 4,
+              "probability": 0.5
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Microelectronics",
+          "outcomes": [
+            {
+              "outcomeId": 3,
+              "probability": 0.2
+            },
+            {
+              "outcomeId": 4,
+              "probability": 0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Unfortunately, you forgot about choosing the elective subjects and got to learn Delphi in L13.",
+      "options": [
+        {
+          "id": 1,
+          "text": "Try to switch places with someone",
+          "outcomes": [
+            {
+              "outcomeId": 1,
+              "probability": 0.2
+            },
+            {
+              "outcomeId": 5,
+              "probability": 0.8
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Accept your defeat and start learning",
+          "outcomes": [
+            {
+              "outcomeId": 5,
+              "probability": 0.8
+            },
+            {
+              "outcomeId": 5,
+              "probability": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "You passed the first year with flying colors! What do you want to do during your holidays?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Hang out with your friends",
+          "outcomes": [
+            {
+              "outcomeId": 6,
+              "probability": 0.2
+            },
+            {
+              "outcomeId": 6,
+              "probability": 0.8
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Study more because PTC is coming...",
+          "outcomes": [
+            {
+              "outcomeId": 6,
+              "probability": 0.8
+            },
+            {
+              "outcomeId": 6,
+              "probability": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "That wasn't the best choice. You failed some other courses. What do you want to do during your holidays?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Hang out with your friends",
+          "outcomes": [
+            {
+              "outcomeId": 6,
+              "probability": 0.2
+            },
+            {
+              "outcomeId": 6,
+              "probability": 0.8
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Study more because PTC is coming...",
+          "outcomes": [
+            {
+              "outcomeId": 6,
+              "probability": 0.8
+            },
+            {
+              "outcomeId": 6,
+              "probability": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "No one wanted to switch places with you. Which of the following subjects will you study the most?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Calculus",
+          "outcomes": [
+            {
+              "outcomeId": 3,
+              "probability": 0.8
+            },
+            {
+              "outcomeId": 4,
+              "probability": 0.2
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Operating systems",
+          "outcomes": [
+            {
+              "outcomeId": 3,
+              "probability": 0.7
+            },
+            {
+              "outcomeId": 4,
+              "probability": 0.3
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Low-level programming",
+          "outcomes": [
+            {
+              "outcomeId": 3,
+              "probability": 0.5
+            },
+            {
+              "outcomeId": 4,
+              "probability": 0.5
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Microelectronics",
+          "outcomes": [
+            {
+              "outcomeId": 3,
+              "probability": 0.2
+            },
+            {
+              "outcomeId": 4,
+              "probability": 0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "A suspicious character tells you that they have all the answers to the PTC exam. You just need to add them to your Discord server.",
+      "options": [
+        {
+          "id": 1,
+          "text": "Ignore them",
+          "outcomes": [
+            {
+              "outcomeId": 7,
+              "probability": 0.2
+            },
+            {
+              "outcomeId": 8,
+              "probability": 0.8
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Add them",
+          "outcomes": [
+            {
+              "outcomeId": 7,
+              "probability": 0.1
+            },
+            {
+              "outcomeId": 101,
+              "probability": 0.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "WOW! You've somehow passed PTC.",
+      "options": [
+        {
+          "id": 1,
+          "text": "Let's go! I'm the best!",
+          "outcomes": [
+            {
+              "outcomeId": 9,
+              "probability": 0.9
+            },
+            {
+              "outcomeId": 9,
+              "probability": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "You failed PTC",
+      "options": [
+        {
+          "id": 1,
+          "text": "Try again next year",
+          "outcomes": [
+            {
+              "outcomeId": 9,
+              "probability": 0.9
+            },
+            {
+              "outcomeId": 9,
+              "probability": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Now you have to find a group of friends for ASK. What do you want to do?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Drink beer",
+          "outcomes": [
+            {
+              "outcomeId": 102,
+              "probability": 0.7
+            },
+            {
+              "outcomeId": 10,
+              "probability": 0.3
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Try to pass Roboday",
+          "outcomes": [
+            {
+              "outcomeId": 102,
+              "probability": 0.1
+            },
+            {
+              "outcomeId": 10,
+              "probability": 0.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Choose your elective subjects",
+      "options": [
+        {
+          "id": 1,
+          "text": "NLP + SP4.0 + Bio + PAI",
+          "outcomes": [
+            {
+              "outcomeId": 11,
+              "probability": 0.9
+            },
+            {
+              "outcomeId": 103,
+              "probability": 0.1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "TI + SP4.0 + IWM + PAI",
+          "outcomes": [
+            {
+              "outcomeId": 11,
+              "probability": 0.5
+            },
+            {
+              "outcomeId": 103,
+              "probability": 0.5
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "TI + SG + IWM + Adv",
+          "outcomes": [
+            {
+              "outcomeId": 11,
+              "probability": 0.2
+            },
+            {
+              "outcomeId": 103,
+              "probability": 0.8
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "PK + SG + Bio + Adv",
+          "outcomes": [
+            {
+              "outcomeId": 11,
+              "probability": 0.3
+            },
+            {
+              "outcomeId": 103,
+              "probability": 0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "What's your bachelor's thesis topic?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Automatic sarcasm detector",
+          "outcomes": [
+            {
+              "outcomeId": 12,
+              "probability": 0.9
+            },
+            {
+              "outcomeId": 104,
+              "probability": 0.1
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Signal processing",
+          "outcomes": [
+            {
+              "outcomeId": 12,
+              "probability": 0.5
+            },
+            {
+              "outcomeId": 104,
+              "probability": 0.5
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "13-dimensional graphs",
+          "outcomes": [
+            {
+              "outcomeId": 12,
+              "probability": 0.2
+            },
+            {
+              "outcomeId": 104,
+              "probability": 0.8
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Pyramids 4.0",
+          "outcomes": [
+            {
+              "outcomeId": 12,
+              "probability": 0.3
+            },
+            {
+              "outcomeId": 104,
+              "probability": 0.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Good job! Now you're an engineer!",
+      "options": []
+    },
+    {
+      "id": 101,
+      "text": "It was the dean! You got expelled for cheating. Game over!",
+      "options": []
+    },
+    {
+      "id": 102,
+      "text": "You should have focused on more important things! You failed other exams and have a 15 ECTS deficit. Game over!",
+      "options": []
+    },
+    {
+      "id": 103,
+      "text": "Do you really enjoy suffering? You have a 20 ECTS deficit. Game over!",
+      "options": []
+    },
+    {
+      "id": 104,
+      "text": "You're neither an engineer nor a goalkeeper. No skills to defend your work! Game over!",
+      "options": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MVC.Models.Genre>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Ajax.ActionLink("Delete", "Delete", new { id = item.Id }, new AjaxOptions()
+                    {
+                        HttpMethod = "Delete",
+                        Confirm = "Are you sure you want to delete this song?",
+                        UpdateTargetId = "songs"
+                    })
+            </td>
+        </tr>
+    }
+
+</table>

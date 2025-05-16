@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Q&A</title>
+    <style>
+      #r {
+        background-color: Red;
+      }
+      #g {
+        background-color: Green;
+      }
+      #b {
+        background-color: Blue;
+      }
+      #r,
+      #g,
+      #b {
+        height: 100px;
+        width: 500px;
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript">
+      function Down() {
+        var div = $(this);
+        $("div").mousemove(function (e) {
+          div.remove();
+          div.insertAfter(e.target);
+          div.mousedown(Down);
+        });
+        $("div").mouseup(function (e) {
+          $("div").unbind("mousemove");
+        });
+      }
+      $(document).ready(function () {
+        $("div").mousedown(Down);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="r"></div>
+    <div id="g"></div>
+    <div id="b"></div>
+  </body>
+</html>

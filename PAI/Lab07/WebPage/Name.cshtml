@@ -1,0 +1,22 @@
+﻿@{ 
+    var name = Request["name"];
+    if (String.IsNullOrEmpty(name) || !IsPost)
+    {
+        name = "Robert Paulson";
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <ul>
+        @for (int i = 0; i < 10; i++)
+        {
+            <li>His name is @name</li>
+        }
+    </ul>
+</body>
+</html>

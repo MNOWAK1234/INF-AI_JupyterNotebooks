@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@Page.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Style.css">
+    <style>
+        body {
+            background-color: #9B2B32;
+        }
+    </style>
+</head>
+<body>
+    <div class="links">
+        @RenderSection("Links")
+    </div>
+    <div class="armour"></div>
+    <div class="plate">@RenderBody()</div>
+    <div class="armour"></div>
+    <div class="info">@RenderSection("Info")</div>
+</body>
+</html>

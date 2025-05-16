@@ -40,6 +40,7 @@ This repository contains coding tasks and projects from the following study prog
 - **WZK** - Cryptography
 - **BIO** - Bioinformatics
 - **SP4.0** - Industry 4.0 Systems
+- **PAI** - Internet Applications
 
 ## Term 7
 

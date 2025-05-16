@@ -1,0 +1,42 @@
+﻿
+@model IEnumerable<MVC.Models.Song>
+
+<table class="table" id="songs">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Artist)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GenreId)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artist)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Ajax.ActionLink("Delete", "Delete", new { id = item.Id }, new AjaxOptions()
+                    {
+                        HttpMethod = "Delete",
+                        Confirm = "Are you sure you want to delete this song?",
+                        UpdateTargetId = "songs"
+                    })
+            </td>
+        </tr>
+    }
+
+</table>

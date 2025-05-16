@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="form_check.js" defer></script>
+  </head>
+  <body>
+    <table id="myTable">
+      <tbody>
+        <tr>
+          <td>Wiersz 1</td>
+        </tr>
+        <tr>
+          <td>Wiersz 2</td>
+        </tr>
+        <tr>
+          <td>Wiersz 3</td>
+        </tr>
+        <tr>
+          <td>Wiersz 4</td>
+        </tr>
+        <tr>
+          <td>Wiersz 5</td>
+        </tr>
+        <tr>
+          <td>Wiersz 6</td>
+        </tr>
+        <tr>
+          <td>Wiersz 7</td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" onclick="swapRows(this);">Zamiana</button>
+    <form name="dane_osobowe">
+      <!--form name="dane_osobowe" onsubmit="return validate(this);"></form-->
+      <table>
+        <tr>
+          <td>Imię</td>
+          <td>
+            <input type="text" name="f_imie" /><span
+              class="err"
+              id="e_imie"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Nazwisko</td>
+          <td>
+            <input type="text" name="f_nazwisko" /><span
+              class="err"
+              id="e_nazwisko"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Płeć</td>
+          <td>
+            <input
+              name="f_plec"
+              value="f_k"
+              checked
+              type="radio"
+              onclick="showElement('nazwisko_panienskie')"
+              ;
+            />kobieta<br />
+            <input
+              name="f_plec"
+              value="f_m"
+              type="radio"
+              onclick="hideElement('nazwisko_panienskie')"
+              ;
+            />mężczyzna
+          </td>
+        </tr>
+        <tr id="nazwisko_panienskie">
+          <td>N. panieńskie</td>
+          <td>
+            <input type="text" name="f_nazwisko_p" /><span
+              class="err"
+              id="e_nazwisko_p"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>E-mail</td>
+          <td>
+            <input type="text" name="f_email" /><span
+              class="err"
+              id="e_email"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Kod pocztowy</td>
+          <td>
+            <input type="text" name="f_kod" /><span
+              class="err"
+              id="e_kod"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Ulica/Osiedle</td>
+          <td>
+            <input type="text" name="f_ulica" /><span
+              class="err"
+              id="e_ulica"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Miasto</td>
+          <td>
+            <input type="text" name="f_miasto" /><span
+              class="err"
+              id="e_miasto"
+            ></span>
+          </td>
+        </tr>
+        <tr>
+          <td>Uwagi</td>
+          <td>
+            <textarea
+              rows="5"
+              cols="15"
+              name="uwagi"
+              oninput="cnt(this.form.uwagi, document.getElementById('zostalo'), 150)"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Pozostało <span id="zostalo">150</span> znaków</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="submit"
+              value="Prześlij"
+              onclick="return validate(this.form);"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

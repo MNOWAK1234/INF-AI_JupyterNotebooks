@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+    <style>
+      a {
+        margin: 10px;
+      }
+      #content {
+        border: 1px solid black;
+        padding: 20px;
+        width: 50%;
+      }
+    </style>
+    <script type="text/javascript">
+      $(function () {
+        $("a").click(function () {
+          $("#content").animate({ height: "0px", width: "0px" }, () => {
+            /*$("#content").fadeOut();
+            $("#content").load("AJAX" + $(this).attr("href"));
+            $("#content").fadeIn();*/
+            //Zadanie 18
+            /*
+            $('#content').fadeOut('medium', function () {
+            $('#content').load('AJAX' + thisA.attr('href'), function () {
+            $('#content').fadeIn();
+            });*/
+            $("#content").load("AJAX" + $(this).attr("href"), () => {
+              $("#content").animate({ height: "500px", width: "500px" });
+            });
+          });
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="Selektory.html">Strona1</a>
+        <a href="Style.html">Strona2</a>
+        <a href="Zdarzenia.html">Strona3</a>
+      </nav>
+    </header>
+    <div id="content"></div>
+  </body>
+</html>

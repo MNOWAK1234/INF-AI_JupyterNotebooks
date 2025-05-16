@@ -1,0 +1,50 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.separator {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.hide-completed {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-list {
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.add-task input[type="text"] {
+  margin-right: 10px;
+}
+
+h2 {
+  text-align: center;
+}
