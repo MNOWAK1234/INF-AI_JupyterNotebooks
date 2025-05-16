@@ -46,6 +46,7 @@ This repository contains coding tasks and projects from the following study prog
 - **BIO** - Bioinformatics
 - **SP4.0** - Industry 4.0 Systems
 - **PAI** - Internet Applications
+- **MA** - Mobile Applications
 
 ## Term 7
 
