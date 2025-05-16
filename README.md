@@ -24,11 +24,13 @@ This repository contains coding tasks and projects from the following study prog
 - **SiAD** – Statistics and Data Analysis
 - **DM** – Data Mining
 - **ECO** – Elements of Convex Optimization
+- **SBD1** - Database Systems 1
 
 ## Term 5
 
 - **AI** - Artificial Intelligence
 - **KCK** – Human-Computer Interaction and Signal Processing
+- **SBD2** - Database Systems 2
 
 ## Term 6
 

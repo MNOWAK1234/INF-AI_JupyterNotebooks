@@ -1,0 +1,229 @@
+ZADANIE 1:
+
+db.pracownicy.find().count()
+
+ZADANIE 2:
+
+db.zespoly.insertMany([
+{"id_zesp":10,"nazwa":"ADMINISTRACJA","adres":"PIOTROWO 3A"},
+{"id_zesp":20,"nazwa":"SYSTEMY ROZPROSZONE","adres":"PIOTROWO 3A"},
+{"id_zesp":30,"nazwa":"SYSTEMY EKSPERCKIE","adres":"STRZELECKA 14"},
+{"id_zesp":40,"nazwa":"ALGORYTMY","adres":"WLODKOWICA 16"},
+{"id_zesp":50,"nazwa":"BADANIA OPERACYJNE","adres":"MIELZYNSKIEGO 30"}
+])
+
+ZADANIE 3.
+
+db.pracownicy.find({"etat":"PROFESOR"}, {"nazwisko":1, "_id":0})
+-Wyświetla tylko nazwiska PROFESORÓW
+
+db.pracownicy.find({"etat":"PROFESOR"}, {"nazwisko":0, "_id":0})
+- wyświetla wszystkie informacje o PROFESORACH bez nazwisk i _id
+
+db.pracownicy.find({"etat":"PROFESOR"}, {"nazwisko":1, "placa_pod":0})
+-Wystąpi błąd:
+MongoServerError: Cannot do exclusion on field placa_pod in inclusion projection
+
+bo nie można wyświetlić jednocześnie konkretnych pól i wszystkich poza jednym jednocześnie
+
+ZADANIE 4.
+
+db.pracownicy.find(
+{$or:[{"etat":"ASYSTENT"}, {"placa_pod":{$gt:200}, "placa_pod": {$lt:500}}]},
+{"nazwisko":1, "etat":1, "placa_pod":1, "_id":0}
+)
+
+ZADANIE 5.
+
+db.pracownicy.find(
+{"placa_pod": {$gt:400}},
+{"nazwisko":1, "etat":1, "placa_pod":1, "_id":0}
+).sort(
+{"etat":1, "placa_pod":-1})
+
+ZADANIE 6.
+
+db.pracownicy.find(
+{"id_zesp":{$in:[20]}},
+{"nazwisko":1,"placa_pod":1, "_id":0}
+).sort(
+  {"placa_pod":-1}
+).skip(1).limit(1)
+
+
+ZADANIE 7.
+
+db.pracownicy.find(
+{"id_zesp":{$in:[20,30]},"etat":{$ne:"ASYSTENT"}, "nazwisko":{$regex:"SKI"}},
+{"nazwisko":1,"etat":1, "_id":0}
+)
+
+ZADANIE 8.
+
+db.pracownicy.aggregate([
+    {$sort:{pensja:-1}},
+    {$skip:2},
+    {$limit:1},
+    {
+        $project: {
+            _id: 0,
+            nazwisko: 1,
+            stanowisko: "$etat",
+            rok_zatrudnienia: { $year: "$zatrudniony" }
+        }
+    }
+])
+
+ZADANIE 9.
+
+db.pracownicy.aggregate([
+    {$group: {
+            _id: "$id_zesp",
+            liczba_pracownikow: { $sum: 1 }}
+    },
+    {$match: {liczba_pracownikow: { $gt: 3 }}}
+])
+
+ZADANIE 10.
+
+db.pracownicy.aggregate([
+    {$match:{"id_zesp":{$in:[20]}}},
+    {
+        $lookup: {
+            from: "zespoly",
+            localField: "id_zesp",
+            foreignField: "id_zesp",
+            as: "zespol_prac"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nazwisko: 1,
+            adres_zespolu:  {$arrayElemAt:["$zespol_prac.adres",0]}
+        }
+    }
+])
+
+ZADANIE 11.
+
+db.pracownicy.aggregate([
+    {
+        $lookup: {
+            from: "zespoly",
+            localField: "id_zesp",
+            foreignField: "id_zesp",
+            as: "zespol_prac"
+        }
+    },
+    {
+        $match: {
+            "zespol_prac.adres": { $regex:"STRZELECKA" }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nazwisko: 1,
+            nazwa_zespolu: {$arrayElemAt:["$zespol_prac.nazwa",0]}
+        }
+    }
+])
+
+
+ZADANIE 12.
+
+
+db.pracownicy.aggregate([
+    {
+        $lookup: {
+            from: "zespoly",
+            localField: "id_zesp",
+            foreignField: "id_zesp",
+            as: "zespol_prac"
+        }
+    },
+    {
+        $group: {
+            _id: "$zespol_prac.nazwa",
+            liczba_pracownikow: { $sum: 1 }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            liczba: "$liczba_pracownikow",
+            zespol: "$_id"
+        }
+    }
+])
+
+
+ZADANIE 13.
+
+var pracownicy = db.pracownicy.find();
+while (pracownicy.hasNext()) {
+ prac = pracownicy.next();
+ zesp = db.zespoly.findOne({"id_zesp": prac.id_zesp});
+ print(prac.nazwisko + ":" + zesp.nazwa);
+}
+
+
+ZADANIE 14.
+
+
+db.produkty.aggregate([
+    {
+        $match: {
+            "oceny.osoba": {
+                $nin: ["Ania", "Karol"]
+            }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nazwa: 1
+        }
+    }
+])
+
+ZADANIE 15.
+
+
+db.produkty.aggregate([
+    { $unwind: "$oceny" },
+    {
+        $group: {
+            _id: "$nazwa",
+            srednia_ocena: { $avg: "$oceny.ocena" }
+        }
+    },
+    { $sort: { srednia_ocena: -1 }},
+    { $limit: 1 },
+    {
+        $project: {
+            _id: 0,
+            nazwa: "$_id",
+            srednia_ocena: 1
+        }
+    }
+])
+
+ZADANIE 16.
+
+
+db.produkty.update(
+ {"nazwa":"Wiertarko - wkrętarka"},
+ {$push: {oceny: {osoba: "Ania", ocena: 4}}}
+)
+
+
+ZADANIE 17. ---
+
+ZADANIE 18.
+
+db.produkty.updateMany(
+    { "oceny.ocena": { $lte: 3 } },
+    { $pull: { oceny: { ocena: { $lte: 3 } } } }
+)
