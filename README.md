@@ -27,6 +27,7 @@ This repository contains coding tasks and projects from the following study prog
 - **ECO** – Elements of Convex Optimization
 - **SBD1** - Database Systems 1
 - **UBI** - Ubiquitous Systems and Applications
+- **CGV** - Computer Graphics and Visualization
 
 ## Term 5
 
