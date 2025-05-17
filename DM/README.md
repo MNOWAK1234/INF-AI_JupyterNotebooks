@@ -10,3 +10,4 @@
 - **Project1**: Tabular Data and Image Clustering
 - **Lab08**: Exploratory Data Analysis
 - **Lab09**: Association Rules
+- **Lab10**: Apriori Algorithm for generating Association Rules
