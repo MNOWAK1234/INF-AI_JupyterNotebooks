@@ -7,9 +7,9 @@
 - **Project1**: Wire Removal
 - **Lab06**: Image Description
 - **Lab07**: Image Segmentation
-- **Lab08**: Intro to OpenCV
+- **Lab08**: Introduction to OpenCV
 - **Project2**: Monitoring a Snooker Game
-- **Lab10**: Convolutional Neural Networks
-- **Lab11**: Popular Neural Network Models
+- **Lab10**: Introduction to Pytorch and Tensorflow
+- **Lab11**: Inference and Fine-Tuning
 - **Lab12**: Neural Network Evaluation
 - **Project3**: ???
