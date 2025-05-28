@@ -11,3 +11,4 @@
 - **Lab09**: Gradient Boosting
 - **Lab10**: Ensemble Classifiers
 - **Lab11**: Expectation Maximization
+- **Lab12**: Clustering Methods
