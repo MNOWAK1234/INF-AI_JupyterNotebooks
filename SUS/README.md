@@ -12,3 +12,5 @@
 - **Lab10**: Ensemble Classifiers
 - **Lab11**: Expectation Maximization
 - **Lab12**: Clustering Methods
+- **Lab13**: Explainable AI
+- **Project1**: Forecasting Chess Game Outcomes
