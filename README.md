@@ -16,37 +16,38 @@ This repository contains coding tasks and projects from the following study prog
 
 ## Term 3
 
-- **CO** - Combinatorial Optimization
+- **CO** – Combinatorial Optimization
 - **IT** – Information Theory
-- **OOP** - Object Oriented Programming
+- **OOP** – Object Oriented Programming
+- **PSIW** – Concurrent Programming
 
 ## Term 4
 
 - **SiAD** – Statistics and Data Analysis
 - **DM** – Data Mining
 - **ECO** – Elements of Convex Optimization
-- **SBD1** - Database Systems 1
-- **UBI** - Ubiquitous Systems and Applications
-- **CGV** - Computer Graphics and Visualization
+- **SBD1** – Database Systems 1
+- **UBI** – Ubiquitous Systems and Applications
+- **CGV** – Computer Graphics and Visualization
 
 ## Term 5
 
-- **AI** - Artificial Intelligence
+- **AI** – Artificial Intelligence
 - **KCK** – Human-Computer Interaction and Signal Processing
-- **SBD2** - Database Systems 2
-- **ES** - Embedded Systems
-- **SE** - Software Engineering
-- **SK2** - Computer Networks 2
+- **SBD2** – Database Systems 2
+- **ES** – Embedded Systems
+- **SE** – Software Engineering
+- **SK2** – Computer Networks 2
 
 ## Term 6
 
 - **NLP** – Natural Language Processing
-- **DP** - Distributed Processing
-- **WZK** - Cryptography
-- **BIO** - Bioinformatics
-- **SP4.0** - Industry 4.0 Systems
-- **PAI** - Internet Applications
-- **MA** - Mobile Applications
+- **DP** – Distributed Processing
+- **WZK** – Cryptography
+- **BIO** – Bioinformatics
+- **SP4.0** – Industry 4.0 Systems
+- **PAI** – Internet Applications
+- **MA** – Mobile Applications
 
 ## Term 7
 
