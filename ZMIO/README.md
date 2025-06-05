@@ -4,3 +4,4 @@
 - **Lab02**: Intro to Bayesian Optimization
 - **Lab03**: Model-Free Reinforcement Learning
 - **Lab04**: Q-learning
+- **Lab05**: Active Learning
