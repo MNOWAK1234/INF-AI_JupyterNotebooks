@@ -8,6 +8,7 @@ import torch.nn.functional as F
 from sklearn.metrics import roc_auc_score
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
+from sklearn.metrics import f1_score
 
 
 class Hook:
@@ -149,35 +150,32 @@ def AUC(output: torch.FloatTensor, target: torch.LongTensor) -> torch.FloatTenso
 
 class ScoreTracker:
     def __init__(self):
-
         self.losses = []
         self.auc_scores = []
         self.acc_scores = []
+        self.f1_scores = []
 
-    def append(self, loss: float, auc: float, acc: float) -> None:
-        """
-        Append the given loss, auc, and acc scores to the respective lists.
-
-        Args:
-            loss (float): The loss score to append.
-            auc (float): The AUC score to append.
-            acc (float): The accuracy score to append.
-        """
+    def append(self, loss: float, auc: float, acc: float, f1: float = None) -> None:
         self.losses.append(loss)
         self.auc_scores.append(auc)
         self.acc_scores.append(acc)
+        if f1 is not None:
+            self.f1_scores.append(f1)
 
     def add(self, outputs: torch.FloatTensor, labels: torch.LongTensor) -> None:
-        """Calculate and append the loss, auc, and acc scores for the given model outputs
-            and ground truth labels.
+        probs = outputs.detach().cpu().numpy()
+        preds = (probs > 0.5).astype(int)
+        y_true = labels.detach().cpu().numpy()
 
-        Args:
-            outputs (torch.FloatTensor): The model outputs.
-            labels (torch.LongTensor): The ground truth labels.
-        """
-        self.losses.append(Regret(outputs, labels).item())
-        self.auc_scores.append(AUC(outputs, labels).item())
-        self.acc_scores.append(Accuracy(outputs, labels).item())
+        loss = Regret(outputs, labels).item()
+        auc = AUC(outputs, labels).item()
+        acc = Accuracy(outputs, labels).item()
+        f1 = f1_score(y_true, preds)
+
+        self.losses.append(loss)
+        self.auc_scores.append(auc)
+        self.acc_scores.append(acc)
+        self.f1_scores.append(f1)
 
 
 def Train(
@@ -228,9 +226,14 @@ def Train(
             loss.backward()
             optimizer.step()
             scheduler.step()
+            probs = outputs.detach().cpu().numpy()
+            preds = (probs > 0.5).astype(int)
+            y_true = labels.detach().cpu().numpy()
+            f1 = f1_score(y_true, preds)
+
             acc = Accuracy(outputs, labels)
             auc = AUC(outputs, labels)
-            stats_train.append(loss.item(), auc.item(), acc.item())
+            stats_train.append(loss.item(), auc.item(), acc.item(), f1)
         with torch.no_grad():
             for _, data in enumerate(test_dataloader, 0):
                 inputs, labels = data
