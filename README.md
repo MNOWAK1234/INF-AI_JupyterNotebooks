@@ -59,3 +59,4 @@ This repository contains coding tasks and projects from the following study prog
 - **CV** – Computer Vision
 - **ZMIO** – Reinforcement Learning
 - **IMO** – Intelligent Optimization Methods
+- **ISWD** – Intelligent Methods for Decision Support
