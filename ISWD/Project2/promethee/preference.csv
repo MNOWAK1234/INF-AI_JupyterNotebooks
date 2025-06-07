@@ -1,0 +1,6 @@
+Criterion,q,p,k,type
+Average score,0.2,1,8,gain
+Number of reviews,50,200,6,gain
+Minimum price,10,50,5,cost
+Time,10,30,3,gain
+Difficulty,0,2,2,gain
