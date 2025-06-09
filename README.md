@@ -52,6 +52,7 @@ This repository contains coding tasks and projects from the following study prog
 ## Term 7
 
 - **SNUM** – Neural Networks and Machine Learning
+- **BD** – Big Data
 
 ## Term 8
 
@@ -60,3 +61,4 @@ This repository contains coding tasks and projects from the following study prog
 - **ZMIO** – Reinforcement Learning
 - **IMO** – Intelligent Optimization Methods
 - **ISWD** – Intelligent Methods for Decision Support
+- **BDSP** – Big Data Stream Processing

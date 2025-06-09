@@ -1,0 +1,5 @@
+com\example\bigdata\AvgSizeStations$AvgSizeStationMapper.class
+com\example\bigdata\AvgSizeStations.class
+com\example\bigdata\SumCount.class
+com\example\bigdata\AvgSizeStations$AvgSizeStationCombiner.class
+com\example\bigdata\AvgSizeStations$AvgSizeStationReducer.class
