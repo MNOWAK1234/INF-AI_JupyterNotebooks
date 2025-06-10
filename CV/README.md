@@ -11,5 +11,5 @@
 - **Project2**: Monitoring a Snooker Game
 - **Lab10**: Introduction to Pytorch and Tensorflow
 - **Lab11**: Inference and Fine-Tuning
-- **Lab12**: Neural Network Evaluation
+- **Lab12**: Generative Adversarial Network
 - **Project3**: ???
