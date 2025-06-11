@@ -11,3 +11,5 @@
 - **Lab08**: Exploratory Data Analysis
 - **Lab09**: Association Rules
 - **Lab10**: Apriori Algorithm for generating Association Rules
+- **Project2**: Association Rules
+- **Project3**: Time Series Analysis
